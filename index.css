@@ -11,3 +11,11 @@ html {
 a {
     color: navy;
 }
+
+a:hover {
+    color: blue;
+}
+
+#pic {
+    padding: 175px;
+}
