@@ -8,6 +8,12 @@ html {
     font-size: 25px;
 }
 
+.project_year {
+    float: right;
+    font-weight: bold;
+    font-style: italic;
+}
+
 a {
     color: navy;
 }
@@ -18,4 +24,8 @@ a:hover {
 
 #pic {
     padding-left: 300px;
+}
+
+img {
+    border: 2px solid;
 }
