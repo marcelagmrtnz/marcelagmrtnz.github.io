@@ -6,13 +6,22 @@
 <link rel='stylesheet' type='text/css' href='index.css'>
 </head>
 
-<p id='name'> <b> Marcus Gabriel Martinez </b> </p>
+<div id='name_container'> 
+<a href='./index.html' id='name'><b>Marcus Gabriel Martinez</b></a>
+</div>
 
 <body>
 
-<table>
+<ul id='navigation'>
+| <li> <a href='./education_coursework.html' class='navigation_page'>Education and Coursework</a> </li> |
+<li> <a href='./projects.html' class='navigation_page'>Projects</a> </li> |
+<li> <a href='https://github.com/marcusgabrielmartinez' target='_blank' class='navigation_page'>Github</a> </li> |
+<li> <a href='https://www.linkedin.com/in/marcusgmartinez/' target='_blank' class='navigation_page'>LinkedIn</a> </li> |
+</ul>
+
+<table id='intro'>
 <tr>
-<td>
+<td >
 <p> <b> About Me </b> </p>
 
 <p> I am an NLP/Computational Linguistics student at the University of Washington, currently seeking internship opportunities. </p>
@@ -25,92 +34,6 @@
 <li> Grammar Engineering (HPSG) </li>
 <li> Technologies for Low Resource Languages (including all listed above) </li>
 </ul>
-
-<p> <b> Education </b> </p>
-
-<ul>
-<li> University of Washington, M.S. in Computational Linguistics, Expected Graduation: August 2020, GPA: 3.33 </li>
-<li> University of Texas at Austin, B.A. in Linguistics, May 2018, GPA: 3.61 </li>  
-<li> University of Texas at Austin, Certificate in Elements of Computing, May 2018 </li>
-</ul>
-
-<p> <b> Relevant Coursework </b> </p>
-
-<ul>
-<li> 
-Natural Language Processing
-<ul>
-<li> Computational Linguistics Basics </li>
-<li> Shallow Processing for NLP </li>
-<li> Deep Processing for NLP </li>
-<li> NLP Systems and Applications </li>
-</ul>
-</li>
-
-<li>
-Grammar Engineering
-<ul>
-<li> Syntax for Computational Linguistics </li>
-<li> Knowledge Engineering for NLP </li>
-</ul>
-</li>
-
-<li>
-Dialogue Systems
-<ul>
-<li> Natural Language Undertanding for Spoken Dialogue Systems </li>
-<li> Speech Technology for Endangered Languages </li>
-</ul>
-</li>
-
-<li>
-Machine Learning
-<ul>
-<li> Advanced Statistical Methods for NLP </li>
-</ul>
-</li>
-</ul>
-
-<p> <b> Projects </b> </p>
-<ul>
-<li>
-<a href='https://github.com/lonnystrunk/esu-grammar-engineering' target='_blank'>Central Alaskan Yup'ik Engineered Grammar</a>
-<nobr class='project_year'> 2019 </nobr>
-<ul>
-    <li> Built in collaboration with Lonny Strunk and Dr. Emily Bender (instructor) as part of a graduate grammar engineering course </li>
-    <li> A partial grammar engineered for Central Alaskan Yup'ik (esu) </li>
-    <li> HPSG based, built in tdl using the LKB environment </li>
-    <li> Built on research by Miyaoka, O. and Jacobson, S. </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/jane-austen-text-generator' target='_blank'>Stylized Random Text Generator</a>
-<nobr class='project_year'> 2018 </nobr>
-<ul>
-    <li> Generates random sentences of changeable size in the style of author Jane Austen, based on text from three of her novels </li>
-    <li> Built in Python, using a basic bigram language model to generate random text </li>
-</ul>
-</li>
-<li>
-<a href='https://bitbucket.org/uw575nlusds/text_adventure_dialogue/' target='_blank'>Dialogue Systems for Text Adventure Games</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Built as part of a graduate level course at the University of Washington in collaboration with two other group members </li>
-    <li> Game logic built in Python, utilizing Rasa's ConveRT pipeline for NLU </li>
-    <li> Uses a small text adventure game to show the accessibility and usability of NLU in games </li>
-    <li> NLU allows players to use natural language when interacting with the game, unlike most text adventure games that require terse language </li>
-    <li>
-    My contributions:
-    <ul>
-    <li> Built the original NLU model using Rasa and our group's handmade utterances </li>
-    <li> Researched how to interact with Rasa's NLU server system and wrote the initial toy script wrapper for our code to do this locally </li>
-    <li> Wrote the JSON script file used to return game dialogue to the user </li>
-    <li> Offered consultation to the group member who worked on the game logic in their design of the logic, especially as it pertaind to the design of the script </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </td>
 
 <td id='pic'>
@@ -120,6 +43,7 @@ Machine Learning
 </picture>
 </td>
 </tr>
+
 </table>
 
 </body>
