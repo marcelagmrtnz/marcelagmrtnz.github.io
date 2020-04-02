@@ -1,23 +1,11 @@
 html {
-    font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, monospace;
+    font-family: 'Georgia', Times, serif;
     background-color: #fbf7f5;
 }
 
-#navigation {
+#name {
     text-align: center;
-}
-
-#navigation li {
-    display: inline;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: black;
+    font-size: 25px;
 }
 
 .project_year {
@@ -26,44 +14,18 @@ a:visited {
     font-style: italic;
 }
 
-.project {
+a {
     color: navy;
-    text-decoration: underline;
 }
 
-.project:hover {
+a:hover {
     color: blue;
-    text-decoration: none;
-}
-
-#name_container {
-    text-align:center;
-}
-
-#name {
-    display: inline-block;
-    font-size: 25px;
-}
-
-.navigation_page:hover {
-    color: navy;
 }
 
 #pic {
-    padding-left: 200px;
-    vertical-align: middle;
+    padding-left: 300px;
 }
 
 img {
-    float: right;
     border: 2px solid;
-}
-
-#intro {
-    padding-top: 50px;
-    padding-left: 125px;
-}
-
-#intro ul {
-    list-style-position: inside;
 }
