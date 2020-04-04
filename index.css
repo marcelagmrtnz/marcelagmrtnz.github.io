@@ -1,6 +1,10 @@
 html {
-    font-family: Consolas, monaco, monospace;
-    background-color: #fbf7f5;
+    font-family: 'Trebuchet MS', 'Lucida Grande', sans-serif;
+    background-color: '#DCDCDC';
+}
+
+body {
+    color: darkslategray;
 }
 
 #name {
@@ -8,18 +12,24 @@ html {
     font-size: 25px;
 }
 
+#navigation {
+    text-align: center;
+}
+
 .project_year {
     float: right;
     font-weight: bold;
     font-style: italic;
+    color: black;
 }
 
 a {
-    color: navy;
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+    color: dimgray;
 }
 
 #pic {
