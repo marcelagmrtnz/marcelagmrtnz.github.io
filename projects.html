@@ -18,7 +18,16 @@
 <table>
 <tr><td>
 <p> <b> Projects </b> </p>
+Note: Unfortunately, for a variety of reasons, not all of the projects listed below have code available to view. These are marked below with an asterisk (*). All others should link to a repository.
 <ul>
+<li>
+<a href='https://github.com/marcusgabrielmartinez/jane-austen-text-generator' target='_blank'>Stylized Random Text Generator</a>
+<nobr class='project_year'> 2018 </nobr>
+<ul>
+    <li> Generates random sentences of changeable size in the style of author Jane Austen, based on text from three of her novels </li>
+    <li> Built in Python, using a basic bigram language model to generate random text </li>
+</ul>
+</li>
 <li>
 <a href='https://github.com/lonnystrunk/esu-grammar-engineering' target='_blank'>Central Alaskan Yup'ik Engineered Grammar</a>
 <nobr class='project_year'> 2019 </nobr>
@@ -39,14 +48,6 @@
 </ul>
 </li>
 <li>
-<a href='https://github.com/marcusgabrielmartinez/jane-austen-text-generator' target='_blank'>Stylized Random Text Generator</a>
-<nobr class='project_year'> 2018 </nobr>
-<ul>
-    <li> Generates random sentences of changeable size in the style of author Jane Austen, based on text from three of her novels </li>
-    <li> Built in Python, using a basic bigram language model to generate random text </li>
-</ul>
-</li>
-<li>
 <a href='https://bitbucket.org/uw575nlusds/text_adventure_dialogue/' target='_blank'>Dialogue Systems for Text Adventure Games</a>
 <nobr class='project_year'> 2020 </nobr>
 <ul>
@@ -61,8 +62,41 @@
     <li> Researched how to interact with Rasa's NLU server system and wrote the initial toy script wrapper for our code to do this locally </li>
     <li> Wrote the JSON script file used to return game dialogue to the user </li>
     <li> Offered consultation to the group member who worked on the game logic in their design of the logic, especially as it pertained to the design of the script </li>
+    </ul>
+    </li>
 </ul>
 </li>
+<li>
+<a href=''>*Multi-Document Summarization</a>
+<nobr class='project_year'> 2020 </nobr>
+<ul>
+    <li> Built in collaboration with other students as a part of a graduate level course </li>
+    <li> Summarizes documents of a given document in approximatley 100 words </li>
+    <li> Written in Python </li>
+    <li> Utlizes TDIF scoring for content selection, multiple expert information ordering, regex based content compression, and BLEU score based redundancy limitation </li>
+    <li> Utilizes NLTK (tokenization, BLEU scores), Splitta (sentence boundary detection), and more </li>
+    <li>
+    My contributions:
+    <ul>
+    <li> Handled initial data extraction with BeautifulSoup </li>
+    <li> Added sentence boundary detection post-data extraction using NLTK/Splitta </li>
+    <li> Helped to implement TFIDF scoring for content selection </li>
+    <li> Wrote a Bash script to handle automated testing of our system </li>
+    <li> Was very active in helping to debug the system as it was created </li>
+    </ul>
+    </li>
+</ul>
+</li>
+<li>
+<a href=''>*Central Alaskan Yup'ik FAQ Voice Search</a>
+<nobr class='project_year'> 2020 </nobr>
+<ul>
+    <li> Built as part of a Masters capstone project </li>
+    <li> Allows users to search a bilingual FAQ from the Alaska Labor Standards and Safety Division's Wage and Hour - Employee FAQ with speech in English and Yup'ik</li>
+    <li> Implemented in Python </li>
+    <li> Search with English speech utilizes DeepSpeech's pre-trained English model and scorer </li>
+    <li> Search with Yup'ik speech utilizes an acoustic model trained with DeepSpeech's fine-tuning capabilities (on the pre-trained English model), and their modified KenLM scorer creator was used to make the scorer </li>
+    <li> Utilizes sounddevice, wavio, sox, PySimpleGUI, and more </li>
 </ul>
 </li>
 </ul>
