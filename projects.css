@@ -1,0 +1,12 @@
+.accordion-button:not(.collapsed){
+    color: black !important;
+    background-color: #ddd !important;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}

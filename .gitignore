@@ -1,2 +1,5 @@
 dep_index.html
-new_format/*
+dep_projects.html
+.DS_Store
+test*
+
