@@ -1,138 +1,175 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title> Marcus Gabriel Martinez </title>
+        <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous'>
+    </head>
 
-<head> 
-<title> Marcus Gabriel Martinez </title>
-<link rel='stylesheet' type='text/css' href='index.css'>
-</head>
+    <body>
+        <nav class='navbar navbar-expand-lg bg-light'>
+            <div class='container-fluid'>
+                <a class='navbar-brand' href='#'>Marcus G. Martinez</a>
+                <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+            <div class='collapse navbar-collapse' id='navigation'>
+                <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                    <li class='nav_item'>
+                        <a class='nav-link active' aria-current='page' href='./index.html'>About Me</a>
+                    </li>
+                    <li>
+                        <a class='nav-link active' aria-current='page' href='./projects.html'>Projects</a>
+                    </li>
+                    <li>
+                        <a class='nav-link' href='https://github.com/marcusgabrielmartinez' target='_blank'>GitHub</a>
+                    </li>
+                    <li>
+                        <a class='nav-link' href='https://www.linkedin.com/in/marcusgmartinez/' target='_blank'>LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 
-<p id='name'> <b> Marcus Gabriel Martinez </b> </p>
-<div id='navigation'>
-<a href='./index.html'>About Me</a>|
-<a href='./projects.html'>Projects</a>|
-<a href='https://github.com/marcusgabrielmartinez' target='_blank'>GitHub</a>|
-<a href='https://www.linkedin.com/in/marcusgmartinez/' target='_blank'>LinkedIn</a>
-</div>
+        <div class='container'>
+            <br>
+            <div class='text-center'>
+                <h2> <b> Projects </b> </h2>
+                Note: Most projects have code that can be viewed, but for a variety of reasons, some do not. These are marked below with an asterisk (*). All others should link to a repository.
+            </div>
+            <br>
 
-<body>
-<table>
-<tr><td>
-<p> <b> Projects </b> </p>
-Note: Unfortunately, for a variety of reasons, not all of the projects listed below have code available to view. These are marked below with an asterisk (*). All others should link to a repository.
-<ul>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/bdf-pixel-editor' target='_blank'>.bdf Pixel Editor</a>
-<nobr class='project_year'> 2021 </nobr>
-<ul>
-    <li> Allows user to visually edit and create .bdf font files pixel by pixel </li>
-    <li> Allows user to import and edit .bdf fonts </li>
-    <li> Allows user to customize which glyphs they include in their font </li>
-    <li> Written in HTML/CSS/Javascript </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/ethanhjennings/PurpleAirDash' target='_blank'>Purple Air Dashboard</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Allows users to quickly view an AQI value for their area based on the closest Purple Air sensors </li>
-    <li> Written in Python </li>
-    <li> My contributions:
-    <ul>
-    <li> Implemented math for calculating nearest sensors in NumPy, which greatly increased the speed of AQI calculation for the system </li>
-    </ul>
-    </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/segment-audio-clips' target='_blank'>Audio Clip Segmenter</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Allows users to segment a directory of audio clips into smaller clips </li>
-    <li> Utilizes the pydub package </li>
-    <li> Written in Python </li>
-</ul>
-</li>
-<li>
-<a href=''>*Multi-Document Summarization</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Built in collaboration with other students as a part of a graduate level course </li>
-    <li> Summarizes documents of a given document in approximatley 100 words </li>
-    <li> Written in Python </li>
-    <li> Utlizes TDIF scoring for content selection, multiple expert information ordering, regex based content compression, and BLEU score based redundancy limitation </li>
-    <li> Utilizes NLTK (tokenization, BLEU scores), Splitta (sentence boundary detection), and more </li>
-    <li>
-    My contributions:
-    <ul>
-    <li> Handled initial data extraction with BeautifulSoup </li>
-    <li> Added sentence boundary detection post-data extraction using NLTK/Splitta </li>
-    <li> Helped to implement TFIDF scoring for content selection </li>
-    <li> Wrote a Bash script to handle automated testing of our system </li>
-    <li> Was very active in helping to debug the system as it was created </li>
-    </ul>
-    </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/esu-faq-phraselator' target='_blank'>Central Alaskan Yup'ik FAQ Voice Search</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Built as part of a Masters capstone project </li>
-    <li> Allows users to search a bilingual FAQ from the Alaska Labor Standards and Safety Division's Wage and Hour - Employee FAQ with speech in English and Yup'ik</li>
-    <li> Implemented in Python </li>
-    <li> Search with English speech utilizes DeepSpeech's pre-trained English model and scorer </li>
-    <li> Search with Yup'ik speech utilizes an acoustic model trained with DeepSpeech's fine-tuning capabilities (on the pre-trained English model), and their modified<br> KenLM scorer creator was used to make the scorer </li>
-    <li> Utilizes sounddevice, wavio, sox, PySimpleGUI, and more </li>
-</ul>
-</li>
-<li>
-<a href='https://bitbucket.org/uw575nlusds/text_adventure_dialogue/' target='_blank'>Dialogue Systems for Text Adventure Games</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Built as part of a graduate level course at the University of Washington in collaboration with two other group members </li>
-    <li> Game logic built in Python, utilizing Rasa's ConveRT pipeline for NLU </li>
-    <li> Uses a small text adventure game to show the accessibility and usability of NLU in games </li>
-    <li> NLU allows players to use natural language when interacting with the game, unlike most text adventure games that require terse language </li>
-    <li>
-    My contributions:
-    <ul>
-    <li> Built the original NLU model using Rasa and our group's handmade utterances </li>
-    <li> Researched how to interact with Rasa's NLU server system and wrote the initial toy script wrapper for our code to do this locally </li>
-    <li> Wrote the JSON script file used to return game dialogue to the user </li>
-    <li> Offered consultation to the group member who worked on the game logic in their design of the logic, especially as it pertained to the design of the script </li>
-    </ul>
-    </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/task-logger' target='_blank'>Task Logger</a>
-<nobr class='project_year'> 2020 </nobr>
-<ul>
-    <li> Allows users to track time spent on tasks with active timers/task descriptions, or to manually add tasks and time spent on them. </li>
-    <li> Utilizes a simple command-line interface with options for file specification and file overwrite. </li>
-    <li> Written in Python </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/lonnystrunk/esu-grammar-engineering' target='_blank'>Central Alaskan Yup'ik Engineered Grammar</a>
-<nobr class='project_year'> 2019 </nobr>
-<ul>
-    <li> Built in collaboration with Lonny Strunk and Dr. Emily Bender (instructor) as part of a graduate grammar engineering course </li>
-    <li> A partial grammar engineered for Central Alaskan Yup'ik (esu) </li>
-    <li> HPSG based, built in tdl using the LKB environment </li>
-    <li> Built on research by Miyaoka, O. and Jacobson, S. </li>
-</ul>
-</li>
-<li>
-<a href='https://github.com/marcusgabrielmartinez/jane-austen-text-generator' target='_blank'>Stylized Random Text Generator</a>
-<nobr class='project_year'> 2018 </nobr>
-<ul>
-    <li> Generates random sentences of changeable size in the style of author Jane Austen, based on text from three of her novels </li>
-    <li> Built in Python, using a basic bigram language model to generate random text </li>
-</ul>
-</li>
-</ul>
-</td></tr>
-</body>
+            <div class='accordion accordion-flush' id='yearAccordian'>
+                <div class='accordion-item'>
+                <h2 class='accordion-header' id='first-heading'>
+                    <button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFirst' 
+                    aria-expanded='true' aria-controls='collapseFirst'>
+                    2021
+                </button> </h2>
+                <div id='collapseFirst' class='accordion-collapse collapse show' aria-labelledby='first-heading' data-bs-parent='#yearAccordian'>
+                    <div class='accordion-body'>
+                        <a href='https://github.com/marcusgabrielmartinez/bdf-pixel-editor' target='_blank'>.bdf Pixel Editor</a>
+                            <ul>
+                                <li> Allows user to visually edit and create .bdf font files pixel by pixel </li>
+                                <li> Allows user to import and edit .bdf fonts </li>
+                                <li> Allows user to customize which glyphs they include in their font </li>
+                                <li> Written in HTML/CSS/Javascript </li>
+                            </ul>
+                </div> </div> </div>
 
+                <div class='accordion-item'>
+                    <h2 class='accordion-header' id='second-heading'>
+                        <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSecond' 
+                        aria-expanded='false' aria-controls='collapseSecond'>
+                        2020
+                    </button> </h2>
+                    <div id='collapseSecond' class='accordion-collapse collapse' aria-labelledby='second-heading' data-bs-parent='#yearAccordian'>
+                        <div class='accordion-body'>
+                            <a href='https://github.com/ethanhjennings/PurpleAirDash' target='_blank'>Purple Air Dashboard</a>
+                                <ul>
+                                    <li> Allows users to quickly view an AQI value for their area based on the closest Purple Air sensors </li>
+                                    <li> Written in Python </li>
+                                    <li> My contributions:
+                                    <ul>
+                                        <li> Implemented math for calculating nearest sensors in NumPy, which greatly increased the speed of AQI calculation for the system </li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            <a href='https://github.com/marcusgabrielmartinez/segment-audio-clips' target='_blank'>Audio Clip Segmenter</a>
+                                <ul>
+                                    <li> Allows users to segment a directory of audio clips into smaller clips </li>
+                                    <li> Utilizes the pydub package </li>
+                                    <li> Written in Python </li>
+                                </ul>
+                            <a href=''>*Multi-Document Summarization</a>
+                                <ul>
+                                    <li> Built in collaboration with other students as a part of a graduate level course </li>
+                                    <li> Summarizes documents of a given document in approximatley 100 words </li>
+                                    <li> Written in Python </li>
+                                    <li> Utlizes TDIF scoring for content selection, multiple expert information ordering, regex based content compression, and BLEU score based redundancy limitation </li>
+                                    <li> Utilizes NLTK (tokenization, BLEU scores), Splitta (sentence boundary detection), and more </li>
+                                    <li>
+                                        My contributions:
+                                        <ul>
+                                            <li> Handled initial data extraction with BeautifulSoup </li>
+                                            <li> Added sentence boundary detection post-data extraction using NLTK/Splitta </li>
+                                            <li> Helped to implement TFIDF scoring for content selection </li>
+                                            <li> Wrote a Bash script to handle automated testing of our system </li>
+                                            <li> Was very active in helping to debug the system as it was created </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <a href='https://github.com/marcusgabrielmartinez/esu-faq-phraselator' target='_blank'>Central Alaskan Yup'ik FAQ Voice Search</a>
+                                <ul>
+                                    <li> Built as part of a Masters capstone project </li>
+                                    <li> Allows users to search a bilingual FAQ from the Alaska Labor Standards and Safety Division's Wage and Hour - Employee FAQ with speech in English and Yup'ik</li>
+                                    <li> Implemented in Python </li>
+                                    <li> Search with English speech utilizes DeepSpeech's pre-trained English model and scorer </li>
+                                    <li> Search with Yup'ik speech utilizes an acoustic model trained with DeepSpeech's fine-tuning capabilities (on the pre-trained English model), and their modified<br> KenLM scorer creator was used to make the scorer </li>
+                                    <li> Utilizes sounddevice, wavio, sox, PySimpleGUI, and more </li>
+                                </ul>
+                            <a href='https://bitbucket.org/uw575nlusds/text_adventure_dialogue/' target='_blank'>Dialogue Systems for Text Adventure Games</a>
+                                <ul>
+                                    <li> Built as part of a graduate level course at the University of Washington in collaboration with two other group members </li>
+                                    <li> Game logic built in Python, utilizing Rasa's ConveRT pipeline for NLU </li>
+                                    <li> Uses a small text adventure game to show the accessibility and usability of NLU in games </li>
+                                    <li> NLU allows players to use natural language when interacting with the game, unlike most text adventure games that require terse language </li>
+                                    <li>
+                                        My contributions:
+                                        <ul>
+                                            <li> Built the original NLU model using Rasa and our group's handmade utterances </li>
+                                            <li> Researched how to interact with Rasa's NLU server system and wrote the initial toy script wrapper for our code to do this locally </li>
+                                            <li> Wrote the JSON script file used to return game dialogue to the user </li>
+                                            <li> Offered consultation to the group member who worked on the game logic in their design of the logic, especially as it pertained to the design of the script </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <a href='https://github.com/marcusgabrielmartinez/task-logger' target='_blank'>Task Logger</a>
+                                <ul>
+                                    <li> Allows users to track time spent on tasks with active timers/task descriptions, or to manually add tasks and time spent on them. </li>
+                                    <li> Utilizes a simple command-line interface with options for file specification and file overwrite. </li>
+                                    <li> Written in Python </li>
+                                </ul>
+                </div> </div> </div>
+
+                <div class='accordion-item'>
+                    <h2 class='accordion-header' id='third-heading'>
+                        <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseThird' 
+                        aria-expanded='false' aria-controls='collapseThird'>
+                        2019
+                    </button> </h2>
+                    <div id='collapseThird' class='accordion-collapse collapse' aria-labelledby='third-heading' data-bs-parent='#yearAccordian'>
+                        <div class='accordion-body'>
+                            <a href='https://github.com/lonnystrunk/esu-grammar-engineering' target='_blank'>Central Alaskan Yup'ik Engineered Grammar</a>
+                                <ul>
+                                    <li> Built in collaboration with Lonny Strunk and Dr. Emily Bender (instructor) as part of a graduate grammar engineering course </li>
+                                    <li> A partial grammar engineered for Central Alaskan Yup'ik (esu) </li>
+                                    <li> HPSG based, built in tdl using the LKB environment </li>
+                                    <li> Built on research by Miyaoka, O. and Jacobson, S. </li>
+                                </ul>
+                </div> </div> </div>
+
+                <div class='accordion-item'>
+                    <h2 class='accordion-header' id='fourth-heading'>
+                        <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFourth' 
+                        aria-expanded='false' aria-controls='collapseFourth'>
+                        2018
+                    </button> </h2>
+                    <div id='collapseFourth' class='accordion-collapse collapse' aria-labelledby='third-heading' data-bs-parent='#yearAccordian'>
+                        <div class='accordion-body'>
+                            <a href='https://github.com/marcusgabrielmartinez/jane-austen-text-generator' target='_blank'>Stylized Random Text Generator</a>
+                            <ul>
+                                <li> Generates random sentences of changeable size in the style of author Jane Austen, based on text from three of her novels </li>
+                                <li> Built in Python, using a basic bigram language model to generate random text </li>
+                            </ul>
+                </div> </div> </div>
+            </div>
+        </div>
+
+            <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js'
+            integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa' crossorigin='anonymous'>
+            </script>
+    </body>
 </html>
